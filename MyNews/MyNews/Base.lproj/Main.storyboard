@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--新闻-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MyNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-AM-8mY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpT-W3-zYQ">
+                                        <rect key="frame" x="348" y="9" width="19" height="22"/>
+                                        <state key="normal" image="top_navigation_square"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MpT-W3-zYQ" firstAttribute="centerY" secondItem="Aif-AM-8mY" secondAttribute="centerY" id="0UF-y4-PwH"/>
+                                    <constraint firstItem="MpT-W3-zYQ" firstAttribute="trailing" secondItem="Aif-AM-8mY" secondAttribute="trailingMargin" id="4Yf-vd-Vhg"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-aS-ueU">
+                                <rect key="frame" x="0.0" y="69" width="375" height="549"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aif-AM-8mY" firstAttribute="leading" secondItem="ntZ-aS-ueU" secondAttribute="leading" id="0k3-VQ-gst"/>
+                            <constraint firstItem="ntZ-aS-ueU" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="69" id="0pl-Be-CEo"/>
+                            <constraint firstAttribute="trailing" secondItem="Aif-AM-8mY" secondAttribute="trailing" id="96U-N6-XLR"/>
+                            <constraint firstItem="ntZ-aS-ueU" firstAttribute="top" secondItem="Aif-AM-8mY" secondAttribute="bottom" constant="8" symbolic="YES" id="Kkn-72-cSP"/>
+                            <constraint firstItem="Aif-AM-8mY" firstAttribute="trailing" secondItem="ntZ-aS-ueU" secondAttribute="trailing" id="LCX-jE-sTV"/>
+                            <constraint firstItem="ntZ-aS-ueU" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="O3U-C8-BGh"/>
+                            <constraint firstItem="Aif-AM-8mY" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="bTO-UF-Sg9"/>
+                            <constraint firstItem="Aif-AM-8mY" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="20" symbolic="YES" id="fmM-va-NPp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="新闻" image="tabbar_news" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551.20000000000005" y="-752.47376311844084"/>
+        </scene>
+        <!--图片-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MyNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="图片" id="uL6-LN-04f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="-389.05547226386807"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="7Kz-yf-nCC">
+            <objects>
+                <tableViewController id="99Q-Fc-YUO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v7F-lS-hhj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kwE-ca-sDo">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kwE-ca-sDo" id="afN-uo-byC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="99Q-Fc-YUO" id="Hvo-4F-Jo9"/>
+                            <outlet property="delegate" destination="99Q-Fc-YUO" id="pjN-IW-BCn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="我的" image="tabbar_setting" id="ui5-E2-fH5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWJ-I1-6mR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="377.36131934032989"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="DAH-eO-QxS" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ngj-2g-E8g" kind="relationship" relationship="viewControllers" id="WQB-aQ-e3J"/>
+                        <segue destination="99Q-Fc-YUO" kind="relationship" relationship="viewControllers" id="8C2-Tm-qJd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1522" y="-389"/>
+        </scene>
+        <!--图片-->
+        <scene sceneID="sfu-Lw-8wy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DAH-eO-QxS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="图片" image="tabbar_picture" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iSW-IX-Ezh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="fRp-HS-9Ki"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mx-14-zjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.59999999999999" y="-389.05547226386807"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="D5c-Rf-ySz">
+            <objects>
+                <viewController id="Rau-AF-0jn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U8z-Wv-D3q"/>
+                        <viewControllerLayoutGuide type="bottom" id="C07-p2-DqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ewi-2L-dA7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="视频" id="6qo-b2-N7z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pme-7p-QYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503.19999999999999" y="384.55772113943033"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="trP-Se-yJu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ngj-2g-E8g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="视频" image="tabbar_video" selectedImage="tabbar_video_hl" id="EqS-cA-sBQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yRk-MI-Z68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rau-AF-0jn" kind="relationship" relationship="rootViewController" id="PAF-de-chU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hi2-ye-O4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442.4000000000001" y="384.55772113943033"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_news" width="22" height="22"/>
+        <image name="tabbar_picture" width="22" height="22"/>
+        <image name="tabbar_setting" width="22" height="22"/>
+        <image name="tabbar_video" width="22" height="22"/>
+        <image name="tabbar_video_hl" width="22" height="22"/>
+        <image name="top_navigation_square" width="19" height="19"/>
+    </resources>
+</document>
