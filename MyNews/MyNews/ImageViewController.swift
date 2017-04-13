@@ -12,8 +12,15 @@ class ImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
+//        print(self.tabBarItem.titleTextAttributes(for: UIControlState.normal) ?? "not found")
+//        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red, NSFontAttributeName: UIFont(name: "Heiti SC", size: 24.0)!], for: UIControlState.selected)
+//        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.green, NSFontAttributeName: UIFont(name: "Heiti SC", size: 24.0)!], for: UIControlState.normal)
+//    print(self.tabBarItem.titleTextAttributes(for: UIControlState.normal) ?? "not found")
+//        print(self.tabBarItem.titleTextAttributes(for: UIControlState.selected) ?? "not found")
+        
     }
 
     override func didReceiveMemoryWarning() {
