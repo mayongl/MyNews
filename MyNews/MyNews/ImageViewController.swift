@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class ImageViewController: UIViewController {
 
@@ -20,6 +22,7 @@ class ImageViewController: UIViewController {
 //        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.green, NSFontAttributeName: UIFont(name: "Heiti SC", size: 24.0)!], for: UIControlState.normal)
 //    print(self.tabBarItem.titleTextAttributes(for: UIControlState.normal) ?? "not found")
 //        print(self.tabBarItem.titleTextAttributes(for: UIControlState.selected) ?? "not found")
+        getData()
         
     }
 
@@ -38,5 +41,31 @@ class ImageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getData() {
+        let tag1 = "美女"
+        let tag2 = "性感"
+        
+        let urlstr = "http://image.baidu.com/wisebrowse/data?tag1=" + "\(tag1)" + "&tag2=" + "\(tag2)"
+
+        let urlstrEncoded = urlstr.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlPathAllowed)
+        
+        
+        Alamofire.request(urlstrEncoded!).response{ //(completionHandler: <#T##(DefaultDataResponse) -> Void#>)
+        response in
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.error)     // server data
+            //print(response.result)   // result of response serialization            
+            
+           if let data = response.data as? Array<Any> {
+            for d in data {
+                print(d)
+            }
+            
+//                print("JSON: \(JSON)")
+            }
+        }
+    }
 
 }

@@ -16,6 +16,8 @@
 		0D72EDA61E9E6C53005A5DB3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72EDA51E9E6C53005A5DB3 /* VideoViewController.swift */; };
 		0D72EDA81E9E6C65005A5DB3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72EDA71E9E6C65005A5DB3 /* ImageViewController.swift */; };
 		0D72EDAA1E9E6DC8005A5DB3 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72EDA91E9E6DC8005A5DB3 /* SettingHeaderView.swift */; };
+		75244C1A1E9F75B100B0F720 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75244C191E9F75B100B0F720 /* Alamofire.framework */; };
+		E4BD074CDF29B8654C25E20B /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F20E86813F88419768A6A /* Pods_MyNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		0D72EDA51E9E6C53005A5DB3 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		0D72EDA71E9E6C65005A5DB3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		0D72EDA91E9E6DC8005A5DB3 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
+		59002DE67365F79CC6D4E24A /* Pods-MyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNews/Pods-MyNews.debug.xcconfig"; sourceTree = "<group>"; };
+		75244C191E9F75B100B0F720 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNews-guxqejlmfiwylkbxgccovrfrrprq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		790ABB0D08812817E60C7931 /* Pods-MyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNews/Pods-MyNews.release.xcconfig"; sourceTree = "<group>"; };
+		F42F20E86813F88419768A6A /* Pods_MyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75244C1A1E9F75B100B0F720 /* Alamofire.framework in Frameworks */,
+				E4BD074CDF29B8654C25E20B /* Pods_MyNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +56,8 @@
 			children = (
 				0D72ED8C1E9E5A81005A5DB3 /* MyNews */,
 				0D72ED8B1E9E5A81005A5DB3 /* Products */,
+				77B9202B11735938539D2FFB /* Pods */,
+				DD1FA95205753DC17A8FDCD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +126,24 @@
 			name = image;
 			sourceTree = "<group>";
 		};
+		77B9202B11735938539D2FFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59002DE67365F79CC6D4E24A /* Pods-MyNews.debug.xcconfig */,
+				790ABB0D08812817E60C7931 /* Pods-MyNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD1FA95205753DC17A8FDCD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75244C191E9F75B100B0F720 /* Alamofire.framework */,
+				F42F20E86813F88419768A6A /* Pods_MyNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D72ED9E1E9E5A81005A5DB3 /* Build configuration list for PBXNativeTarget "MyNews" */;
 			buildPhases = (
+				213EC908510CC067560C79CE /* [CP] Check Pods Manifest.lock */,
 				0D72ED861E9E5A81005A5DB3 /* Sources */,
 				0D72ED871E9E5A81005A5DB3 /* Frameworks */,
 				0D72ED881E9E5A81005A5DB3 /* Resources */,
+				40C6848133385712FAE948F9 /* [CP] Embed Pods Frameworks */,
+				F49216097E053159F4BDA4E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +214,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		213EC908510CC067560C79CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40C6848133385712FAE948F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNews/Pods-MyNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F49216097E053159F4BDA4E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNews/Pods-MyNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D72ED861E9E5A81005A5DB3 /* Sources */ = {
@@ -315,6 +394,7 @@
 		};
 		0D72ED9F1E9E5A81005A5DB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59002DE67365F79CC6D4E24A /* Pods-MyNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4MWX6CJSX5;
@@ -328,6 +408,7 @@
 		};
 		0D72EDA01E9E5A81005A5DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790ABB0D08812817E60C7931 /* Pods-MyNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4MWX6CJSX5;
