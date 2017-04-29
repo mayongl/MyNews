@@ -17,9 +17,11 @@
 		0D72EDAA1E9E6DC8005A5DB3 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72EDA91E9E6DC8005A5DB3 /* SettingHeaderView.swift */; };
 		0DEC76B31EAE228A00BD5656 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC76B21EAE228A00BD5656 /* ImageCollectionViewController.swift */; };
 		0DEC76B51EAE242100BD5656 /* ImageBrowseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC76B41EAE242100BD5656 /* ImageBrowseCollectionViewCell.swift */; };
-		0DEC76B71EAE25B700BD5656 /* ImageBrowseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC76B61EAE25B700BD5656 /* ImageBrowseCollectionView.swift */; };
 		0DEC76B91EAE260500BD5656 /* ImageBrowseCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC76B81EAE260500BD5656 /* ImageBrowseCollectionViewFlowLayout.swift */; };
 		0DEC76DE1EAF337D00BD5656 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC76DD1EAF337D00BD5656 /* WeatherViewController.swift */; };
+		6D0F2F7E1EB0B9C700F6B42F /* NewsViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F2F7D1EB0B9C700F6B42F /* NewsViewController+TableViewDataSource.swift */; };
+		6D36319E1EB4BF8C004CB741 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D36319D1EB4BF8C004CB741 /* SDWebImage.framework */; };
+		6DB87AD11EB1B09D001B0846 /* NewsViewController+CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB87AD01EB1B09D001B0846 /* NewsViewController+CollectionViewDataSource.swift */; };
 		75244C1A1E9F75B100B0F720 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75244C191E9F75B100B0F720 /* Alamofire.framework */; };
 		E4BD074CDF29B8654C25E20B /* Pods_MyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F20E86813F88419768A6A /* Pods_MyNews.framework */; };
 /* End PBXBuildFile section */
@@ -37,10 +39,12 @@
 		0D72EDA91E9E6DC8005A5DB3 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
 		0DEC76B21EAE228A00BD5656 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		0DEC76B41EAE242100BD5656 /* ImageBrowseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowseCollectionViewCell.swift; sourceTree = "<group>"; };
-		0DEC76B61EAE25B700BD5656 /* ImageBrowseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowseCollectionView.swift; sourceTree = "<group>"; };
 		0DEC76B81EAE260500BD5656 /* ImageBrowseCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowseCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		0DEC76DD1EAF337D00BD5656 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		59002DE67365F79CC6D4E24A /* Pods-MyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNews/Pods-MyNews.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0F2F7D1EB0B9C700F6B42F /* NewsViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		6D36319D1EB4BF8C004CB741 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNews-bttfvwnesiydbcaxzqqxkrwnwdvm/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
+		6DB87AD01EB1B09D001B0846 /* NewsViewController+CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsViewController+CollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		75244C191E9F75B100B0F720 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNews-guxqejlmfiwylkbxgccovrfrrprq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		790ABB0D08812817E60C7931 /* Pods-MyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNews/Pods-MyNews.release.xcconfig"; sourceTree = "<group>"; };
 		F42F20E86813F88419768A6A /* Pods_MyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D36319E1EB4BF8C004CB741 /* SDWebImage.framework in Frameworks */,
 				75244C1A1E9F75B100B0F720 /* Alamofire.framework in Frameworks */,
 				E4BD074CDF29B8654C25E20B /* Pods_MyNews.framework in Frameworks */,
 			);
@@ -115,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				0D72EDA31E9E6C42005A5DB3 /* NewsViewController.swift */,
+				6D0F2F7D1EB0B9C700F6B42F /* NewsViewController+TableViewDataSource.swift */,
+				6DB87AD01EB1B09D001B0846 /* NewsViewController+CollectionViewDataSource.swift */,
 			);
 			name = news;
 			sourceTree = "<group>";
@@ -132,7 +139,6 @@
 			children = (
 				0DEC76B21EAE228A00BD5656 /* ImageCollectionViewController.swift */,
 				0DEC76B41EAE242100BD5656 /* ImageBrowseCollectionViewCell.swift */,
-				0DEC76B61EAE25B700BD5656 /* ImageBrowseCollectionView.swift */,
 				0DEC76B81EAE260500BD5656 /* ImageBrowseCollectionViewFlowLayout.swift */,
 			);
 			name = image;
@@ -158,6 +164,7 @@
 		DD1FA95205753DC17A8FDCD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D36319D1EB4BF8C004CB741 /* SDWebImage.framework */,
 				75244C191E9F75B100B0F720 /* Alamofire.framework */,
 				F42F20E86813F88419768A6A /* Pods_MyNews.framework */,
 			);
@@ -296,8 +303,9 @@
 				0D72EDAA1E9E6DC8005A5DB3 /* SettingHeaderView.swift in Sources */,
 				0DEC76B91EAE260500BD5656 /* ImageBrowseCollectionViewFlowLayout.swift in Sources */,
 				0D72EDA41E9E6C42005A5DB3 /* NewsViewController.swift in Sources */,
-				0DEC76B71EAE25B700BD5656 /* ImageBrowseCollectionView.swift in Sources */,
+				6DB87AD11EB1B09D001B0846 /* NewsViewController+CollectionViewDataSource.swift in Sources */,
 				0D72EDA21E9E6774005A5DB3 /* MeTableViewController.swift in Sources */,
+				6D0F2F7E1EB0B9C700F6B42F /* NewsViewController+TableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

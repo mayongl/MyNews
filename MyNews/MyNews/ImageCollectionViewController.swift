@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import SDWebImage
 
 private let reuseIdentifier = "ImageCell"
 
@@ -39,7 +40,7 @@ class ImageCollectionViewController: UICollectionViewController {
         let tag1 = "美女"
         let tag2 = "性感"
         
-        let urlstr = "http://image.baidu.com/wisebrowse/data?tag1=" + "\(tag1)" + "&tag2=" + "\(tag2)"+"&pn=0&rn=60"
+        let urlstr = "http://image.baidu.com/wisebrowse/data?tag1=" + "\(tag1)" + "&tag2=" + "\(tag2)"+"&pn=1&rn=60"
         //let urlstrEncoded = "http://image.baidu.com/wisebrowse/data?tag1=%E7%BE%8E%E5%A5%B3&tag2=%E6%80%A7%E6%84%9F&pn=0&rn=6"
         
         //let urlstrEncoded = urlstr.addingPercentEscapes(using: String.Encoding.utf8)
@@ -147,6 +148,9 @@ class ImageCollectionViewController: UICollectionViewController {
         // Configure the cell
         let dic = images[indexPath.row]
         cell.label.text = dic[ImgsKey.title] as? String
+        let url = URL(string: (dic[ImgsKey.image_url] as? String)!)
+        print(url)
+        cell.image.sd_setImage(with: url)
         
         return cell
     }
